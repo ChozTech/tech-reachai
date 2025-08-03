@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechReach | Break into Tech Sales</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Sell for a Company You Love</h1>
+      <p>TechReach equips you with everything you need to break into software sales: role guides, salary data, outreach templates, and top companies.</p>
+      <button onclick="document.getElementById('roles').scrollIntoView()">Explore Roles</button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <section id="roles" class="role-section">
+      <h2>🔍 Choose a Role</h2>
+      <div class="role-grid">
+        <button onclick="loadRole('sdr')">SDR</button>
+        <button onclick="loadRole('bdr')">BDR</button>
+        <button onclick="loadRole('ae')">AE</button>
+        <button onclick="loadRole('am')">AM</button>
+      </div>
+      <div id="roleContent" class="role-content"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TechReach. Built to launch the next generation of SaaS pros.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
